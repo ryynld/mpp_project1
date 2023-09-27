@@ -5,59 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Grocery</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
+
 <body>
-
-    <header class="navigation">
-        <div class="page-tittle">E-Grocery</div>
-            <div class="nav">
-                <a href="/" class="nav-item">Home</a>
-                <a href="/" class="nav-item">Our Packages</a>
-                <a href="/" class="nav-item">Call Us</a>
-            </div>
-    </header>
-    <main>
-        <div id="title" class="content-title">
-            <div>
-                <h1>Top Rated E-Groceries Shop in Indonesia</h1>
-            </div>
-            <div>
-                <span>Everyday with Best Ingredients</span>
-            </div>
+    <header>
+        <header class="navigation-bar">
+            <a href="index.html"><img class="logo" src="img/logo ehmart.png"></a>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>    
+                <a href="#ourpackage">Our Package</a>
+                <a href="#callus">Call Us</a>
+            </nav>
+        </header>
+        <div class="home">
+            <h1 class="title">Top Rated E-Groceries Shop in
+                Indonesian</h1>
+            <p class="subtitle">Every Day with best ingredients</p>
         </div>
-        <div id="content" class="content">
-            <div id="content-left" class="content-left">
-                <div id="content-image" class="content-image">
-                    <img class="image" src="asset/placeholder-image.png" alt="slider image">
-                    <span>Fresh Everyday</span>
+    </header>
+    
+    <main>
+        <div class="content">
+            <article>
+                <div class="content-left">
+                    <img name="slide">
+                    <p class="caption">"Setiap hari beli sayur buah yang fresh disini"</p>
+                    <div class="person">
+                        <img class="ava" src="img/girl_201634.png">
+                        <div class="siti">
+                            <h3>Florence Hughes</h3>
+                            <h5>Ibu Rumah Tangga, 28</h5>
+                        </div>
+                    </div>
+                    <hr class="short_hr">
+                    <h3>isi apa yah? ntar dulu lah
+                    </h3>
+                    <div class="benefit">
+                        <div class="poin">
+                            <h3>1</h3>
+                            <p>sabar</p>
+                        </div>
+                        <div class="poin">
+                            <h3>2</h3>
+                            <p>tabah</p>
+                        </div>
+                        <div class="poin">
+                            <h3>3</h3>
+                            <p>ulangi</p>
+                        </div>
+                    </div>
                 </div>
+            </article>
+            
+            <form class="content-right" action="/">
+                <h1>Contact Us</h1>
+                <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                <div class="input-control">
+                    <label class="label" for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="First and last name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label class="label" for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="example@email.com">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Send</button>
+            </form>   
+        </div>
+        <div class="our-package">
+            <div class="our-package-title">
+                <h1>Our Package</h1>
             </div>
-            <div id="content-right" class="content-right">
-                <form class="content-form">
-                    <label for="your-name">Your Name</label>
-                    <input type="text" name="your-name" placeholder="First and Last Name">
-
-                    <label for="email">Email Address:</label>
-                    <input type="email" name="email" placeholder="example@email.com">
-
-                    <label for="interest">What are you interest in?</label>
-                    <select type="select" name="interest">
-                        <option>Football</option>
-                        <option>Badminton</option>
-                    </select>
-
-                    <button id="button" type="submit" class="button">Send</button>
-                </form>
+            <div class="our-package-card">
+                <div class="card">
+                    <h3>Fresh Vegetables</h3>
+                    <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                </div>
             </div>
         </div>
     </main>
-    <div id="our-product">
-        <div class="circle">
-            1
-        </div>
-    </div>
-    <footer></footer>
+    <footer>
+    </footer>
 
 </body>
 </html>
