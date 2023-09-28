@@ -35,62 +35,30 @@ function setTitle(element) {
   document.title = `${text} | E-Groceries`;
 }
 
-
 // VALIDATION
-function validateForm() {
-    const name = document.forms["contact-right"]["name"].value;
-    const email = document.forms["contact-right"]["email"].value;
-    const interest = document.forms["contact-right"]["interest"].value;
-  
-    const isEmail = email.match(/[\w.]+@\w+.\w{2,3}(.\w{2,})?/);
-  
-    if (!name) {
-      const errName = document.getElementById("name-error");
-  
-      errName.style.display = "block";
-      errName.style.visibility = "visible";
+  document.getElementById("button").addEventListener("click", function () {
+    let name = document.forms['input-control']['name'].value;
+    let email = document.forms['input-control']['email'].value;
+    let interest = document.forms['input-control']['interest'].value;
+
+    if(!name) {
+      document.getElementById("name-error").innerText = "Name cannot be blank!";
     }
-  
-    if ((email && !isEmail) || !email) {
-      const errEmail = document.getElementById("email-error");
-  
-      errEmail.style.display = "block";
-      errEmail.style.visibility = "visible";
+    else {
+      document.getElementById("name-error").innerText = "";
     }
-  
-    if (interest === "none") {
-      const errInterest = document.getElementById("interest-error");
-  
-      errInterest.style.display = "block";
-      errInterest.style.visibility = "visible";
+    if(!email) {
+      document.getElementById("email-error").innerText = "Email cannot be blank!";
+    } 
+    else {
+      document.getElementById("email-error").innerText = "";
     }
-  
-    if (name && email && isEmail && interest !== "none") {
-      alert(`Data anda telah sukses terkirim, ${name}`);
-  
-      return false;
-    }
-  
-    return false;
-  }
-  
-  function fillInput(fieldName) {
-    const inputValue = document.getElementById(fieldName).value;
-    const errorText = document.getElementById(`${fieldName}-error`);
-  
-    if (inputValue && errorText.style.visibility === "visible") {
-      errorText.style.display = "none";
-      errorText.style.visibility = "hidden";
+    if(!interest) {
+      document.getElementById("interest-error").innerText = "Interest cannot be blank!";
+    } 
+    else {
+      document.getElementById("interest-error").innerText = "";
     }
   }
-  
-  function selectInterest() {
-    const interestValue = document.getElementById("interest").value;
-    const errorText = document.getElementById("interest-error");
-  
-    if (interestValue !== "none" && errorText.style.visibility === "visible") {
-      errorText.style.display = "none";
-      errorText.style.visibility = "hidden";
-    }
-  }
+);
 

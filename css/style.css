@@ -188,7 +188,7 @@ article h3{
     color: #ffffff;
 }
 
-.content-right > button {
+.button {
     padding: 15px;
     margin-top: 30px;
     width: 100%;
@@ -202,7 +202,7 @@ article h3{
     cursor: pointer;
 }
 
-.content-right > button:hover {
+.button:hover {
     background-color: #082d3d;
 }
 
