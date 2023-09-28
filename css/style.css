@@ -84,7 +84,7 @@ article img {
 }
 
 article h3{
-    color: #ffffff;
+    color: #000000;
     margin-top: 50px;
 }
 
@@ -128,6 +128,12 @@ article h3{
     padding: 0; 
 }
 
+.border {
+    border-bottom: 2px solid var(--light-300);
+    width: var(--w-2);
+    margin: var(--size-5) auto;
+}
+
 .benefit {
     display: flex;
     flex-direction: column;
@@ -152,6 +158,7 @@ article h3{
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
+    color: white;
 }
 
 .poin > p {
@@ -199,12 +206,12 @@ article h3{
     background-color: #082d3d;
 }
 
-.input-control {
+.form-field {
     display: flex;
     flex-direction: column;
 }
 
-.label {
+.input-label {
     font-weight: bold;
     font-size: medium;
     color: #ffffff;

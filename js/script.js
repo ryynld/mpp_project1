@@ -29,6 +29,12 @@ function changeImg(){
 // Run function when page loads
 window.onload=changeImg;
 
+function setTitle(element) {
+  const text = element.innerText;
+
+  document.title = `${text} | E-Groceries`;
+}
+
 
 // VALIDATION
 function validateForm() {
@@ -86,5 +92,5 @@ function validateForm() {
       errorText.style.display = "none";
       errorText.style.visibility = "hidden";
     }
+  }
 
-};
