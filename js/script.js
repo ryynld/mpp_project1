@@ -5,9 +5,9 @@ var images = [];	// Images Array
 var time = 3000;	// Time Between Switch
 	 
 // Image List
-images[0] = "asset/banner1.jpg";
-images[1] = "asset/banner2.jpg";
-images[2] = "asset/banner3.jpg";
+images[0] = "asset/slideMPP1.png";
+images[1] = "asset/slideMPP2.png";
+images[2] = "asset/slideMPP3.png";
 
 // Change Image
 function changeImg(){
