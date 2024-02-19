@@ -5,9 +5,9 @@ var images = [];	// Images Array
 var time = 3000;	// Time Between Switch
 	 
 // Image List
-images[0] = "asset/slideMPP1.png";
-images[1] = "asset/slideMPP2.png";
-images[2] = "asset/slideMPP3.png";
+images[0] = "asset/sample11.jpg";
+images[1] = "asset/sample12.jpg";
+images[2] = "asset/sample13.jpg";
 
 // Change Image
 function changeImg(){
@@ -32,33 +32,5 @@ window.onload=changeImg;
 function setTitle(element) {
   const text = element.innerText;
 
-  document.title = `${text} | E-Groceries`;
+  document.title = `${text} | MPP`;
 }
-
-// VALIDATION
-  document.getElementById("button").addEventListener("click", function () {
-    let name = document.forms['input-control']['name'].value;
-    let email = document.forms['input-control']['email'].value;
-    let interest = document.forms['input-control']['interest'].value;
-
-    if(!name) {
-      document.getElementById("name-error").innerText = "Name cannot be blank!";
-    }
-    else {
-      document.getElementById("name-error").innerText = "";
-    }
-    if(!email) {
-      document.getElementById("email-error").innerText = "Email cannot be blank!";
-    } 
-    else {
-      document.getElementById("email-error").innerText = "";
-    }
-    if(!interest) {
-      document.getElementById("interest-error").innerText = "Interest cannot be blank!";
-    } 
-    else {
-      document.getElementById("interest-error").innerText = "";
-    }
-  }
-);
-
